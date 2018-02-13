@@ -11,7 +11,7 @@ $password_1 ="";
 $errors = array();
 
 // connect to the database
-$db = mysqli_connect('localhost', 'root', '', 'blogapp');
+$db = mysqli_connect('localhost', 'Amazonblog', '', 'blogapp');
 
 // REGISTER USER
 if (isset($_POST['register_user'])) {
