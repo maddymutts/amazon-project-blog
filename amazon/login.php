@@ -7,8 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/element.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
     <script src="js/react.min.js"></script>
     <script src="js/react-dom.min.js"></script>
@@ -45,24 +47,35 @@
                                     </div>
                                 </form><br/>
                             </div>
-                            <div class="panel-footer"><p>Don't have an account? <a href="register.php">Register</a></p></div>
+                            <div class="panel-footer"><p>Don't have an account? <a href="register.php">Register</a><br><a href="javascript:ChangePassword()">Forgot Password</a></p></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    <footer>
+    <footer >
             <div id="container">
                 <center>
                     <p>Copyright &copy; Connect in. All Rights Reserved  |  Contact Us: +91 90000 00000</p> 
                 </center>
             </div>
         </footer>
+
+<script>
+function ChangePassword() {
+    var txt;
+    var person = prompt("Please enter your registered email-id:");
+
+     confirm("Please click the link sent to your email id");
+
+    document.getElementById("demo").innerHTML = person;
+       // document.getElementById("demo").style.visibility="hidden";
+}
+</script>
     <script type="text/babel">
         ReactDOM.render(
-             document.getElementById('loginpage'),
+             document.getElementById('loginpage')
              document.getElementById('container')
-        );
-    </script>
+        );</script>
 </body>
 </html>
