@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>User Settings</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/elements.css" rel="stylesheet">
+        <link href="css/profile.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+        <script src="js/react.min.js"></script>
+        <script src="js/react-dom.min.js"></script>
+        <script src="js/browser.min.js"></script>
+        <link href="css/header.css" rel="stylesheet">
+    </head>
+    <body style="background: #2e6da4">
+        <div id="settingpage">
+            <!--NAVIGATION BAR-->
+
+            <?php include 'header.php';?>
+
+            <!-- EDIT PROFILE PAGE-->
+
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">
+                    <div class="panel" id="changepicture">
+                        <img src="images/emptyuser.jpg" alt>
+                        <div class="panel-footer">
+                            <a style="text-decoration: none">
+                                <button id="changebutton" class="btn " type="submit">
+                                    CHANGE PICTURE
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-md-offset-1">
+                    <div class="panel" id="editprofile">
+                        <div class="panel-heading">
+                            <p style="font-family: Lato; text-align: center">YOUR ACCOUNT</p>
+                        </div>
+                        <div id="newdetails" class="panel-body">
+                            Name:<input class="form-control">
+                            <br><br><br>
+                            E-mail:<input class="form-control">
+                            <br><br><br>
+                            Registration No.:<input class="form-control">
+                            <br><br><br>
+                            Date of birth:<input class="form-control">
+                            <br><br><br>
+                            Department:
+                            <select class="form-control">
+                                <option disabled selected value>Department</option>
+                                <option>Computer Science</option>
+                                <option>Electronics and Communication</option>
+                                <option>Electronics and Instrumentation</option>
+                                <option>Electrical and Electronics</option>
+                                <option>Information Technology</option>
+                                <option>Software</option>
+                                <option>Mechanical</option>
+                                <option>Bio Technology</option>
+                                <option>Genetics</option>
+                                <option>Chemical</option>
+                                <option>Bio Medical</option>
+                                <option>Automobile</option>
+                                <option>Aerospace</option>
+                                <option>Mechatronics</option>
+                                <option>Nanotechnology</option>
+                            </select>      
+                            <br><br><br>
+                            <div class="form-inline" style="border: none">
+                                <div class="col-md-2">
+                                    <p>Year</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="year"> 1
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="year"> 2
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="year"> 3
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="radio" name="year"> 4
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="editfooter" class="panel-footer">
+                            <a style="text-decoration: none" href="profile.html">
+                                <button id="submitbutton" class="btn " type="submit">
+                                    SAVE PROFILE
+                                </button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <?php include 'footerp.php';?>
+        <script type="text/babel">
+            ReactDOM.render(
+                    document.getElementById('settingpage'),
+                    document.getElementById('container')
+                    );
+        </script>
+    </body>
+</html>

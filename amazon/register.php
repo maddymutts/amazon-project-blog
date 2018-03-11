@@ -2,20 +2,20 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Register</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    
-    <link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
-    <script src="js/react.min.js"></script>
-    <script src="js/react-dom.min.js"></script>
-    <script src="js/browser.min.js"></script>
-</head>
-<body style="background-color: #2e6da4">
-    <div id="registerpage" style="height: 100%">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register</title>
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Enriqueta" rel="stylesheet">
+        <script src="js/react.min.js"></script>
+        <script src="js/react-dom.min.js"></script>
+        <script src="js/browser.min.js"></script>
+    </head>
+    <body style="background-color: #2e6da4">
+        <div id="registerpage" style="height: 100%">
             <div class="container-fluid decor_bg" id="register-panel">
                 <div class="row">
                     <div class="col-md-4 col-md-offset-1">
@@ -99,18 +99,12 @@
                 </div>
             </div>
         </div>
-        <footer>
-            <div id="container">
-                <center>
-                    <p>Copyright &copy; Connect in. All Rights Reserved  |  Contact Us: +91 90000 00000</p> 
-                </center>
-            </div>
-        </footer>
-    <script type="text/babel">
-        ReactDOM.render(
-             document.getElementById('registerpage'),
-             document.getElementById('container')
-        );
-    </script>
-</body>
+        <?php include 'footerp.php'; ?>
+        <script type="text/babel">
+            ReactDOM.render(
+                    document.getElementById('registerpage'),
+                    document.getElementById('container')
+                    );
+        </script>
+    </body>
 </html>
