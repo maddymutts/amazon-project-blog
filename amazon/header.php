@@ -4,10 +4,10 @@
             <p class="navbar-brand">connect in.</p>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li id="newpost"><a href="newpost.html"><span class="glyphicon glyphicon-pencil"></span></a></li>
-            <li id="profile"><a href="settings.html">Profile</a></li>
-            <li id="setting"><a href="settings.html">Settings</a></li>
-            <li id="logout"><a href="index.html">Logout</a></li>
+            <li id="newpost"><a href="NewPost.php"><span class="glyphicon glyphicon-pencil"></span></a></li>
+            <li id="profile"><a href="profile.php">Profile</a></li>
+            <li id="setting"><a href="settings.php">Settings</a></li>
+            <li id="logout"><a href="javascript:Logout()">Logout</a></li>
         </ul>
         <form>            
             <div class="searchbar input-group col-md-4">
@@ -21,4 +21,12 @@
         </form>
     </div>
 </div>
+        <script>
+            function Logout() {
+                var txt;
+                alert("Are you sure you want to logout?");
+                window.location.href = "login.php";
 
+                // document.getElementById("demo").style.visibility="hidden";
+            }
+        </script>
