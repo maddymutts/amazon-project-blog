@@ -48,14 +48,6 @@
 
         <?php include 'footerp.php'; ?>
 
-        <script>
-            function Logout() {
-                var txt;
-                alert("Are you sure you want to logout?");
-                window.location.href = "login.php";
 
-                // document.getElementById("demo").style.visibility="hidden";
-            }
-        </script>
     </body>
 </html>
